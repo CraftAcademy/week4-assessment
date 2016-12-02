@@ -6,6 +6,13 @@ require 'pry'
 
 class SlowFood < Sinatra::Base
 
-  # Your code will go here.
+  get "/" do
+    @name = "Philip"
+    erb :index
+  end
 
+  get "/name/:name" do
+    # binding.pry
+    User.create(name: params[:name])
+  end
 end

@@ -7,5 +7,13 @@ require 'pry'
 class SlowFood < Sinatra::Base
 
   # Your code will go here.
+  get '/' do
+    @name = 'Ebba'
+    erb :index
+  end
+
+  get '/name/:name' do
+    
+  end
 
 end

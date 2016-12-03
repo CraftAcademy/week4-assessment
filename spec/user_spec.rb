@@ -6,5 +6,4 @@ describe User do
     expect(user).not_to be nil
   end
 
-  # Write a new unit test here.
 end

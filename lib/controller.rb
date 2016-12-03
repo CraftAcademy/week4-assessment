@@ -6,6 +6,9 @@ require 'pry'
 
 class WeekThreeAssessment < Sinatra::Base
 
-  # Your code will go here.
+get '/' do
+@text = 'Kristoffer'
+erb :index
+  end
 
 end

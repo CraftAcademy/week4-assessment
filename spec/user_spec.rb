@@ -7,6 +7,9 @@ describe User do
   end
 
   it 'should create a name for the user' do
+    user = User.create
+    user.name = 'Amber'
+    user.save
     expect(user.name).to eq 'Amber'
   end
 end

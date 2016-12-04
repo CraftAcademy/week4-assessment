@@ -12,9 +12,10 @@ When(/^I visit the name page for "([^"]*)"$/) do |name|
 end
 
 Then(/^I should create a new user with name "([^"]*)"$/) do |name|
-  # expect(User.last(:name)).to_be name
+  # expect(User.last.name).to eq name
+  # expect(User.last.name).to_be name
 
-  # this works
+  # This should work
   user = User.last
   # expect(user.name).to_be name
   expect(user.name).to eq name

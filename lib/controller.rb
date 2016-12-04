@@ -7,7 +7,7 @@ require 'pry'
 class WeekThreeAssessment < Sinatra::Base
 
   get 'name/:name' do
-    @nameuser = User.create(name: params[:name])
+    @nameuser = User.create(params[:name])
     # @nameuser.name = params[:name]
   end
 

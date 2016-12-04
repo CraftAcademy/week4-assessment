@@ -6,6 +6,6 @@ Feature: As a user
     Given I am on the Home page
     Then I should see "Rodrigo is a student at Craft Academy"
 
-  Scenario: Visit the Amber page
+  Scenario: Visit the Amber page and create the Amber user
     When I visit the name page for "Amber"
     Then I should create a new user with name "Amber"

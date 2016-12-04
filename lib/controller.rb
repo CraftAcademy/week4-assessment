@@ -13,4 +13,15 @@ get '/' do
   erb :index
 end
 
+get '/name' do
+  erb :name
+end
+
+get '/name/:name' do
+  @user = User.new
+  @user.name = params[:name]
+  @user.save
+  erb :name
+end
+
 end

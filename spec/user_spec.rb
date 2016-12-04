@@ -1,10 +1,18 @@
-require './lib/models/user'
+require './lib/models/user.rb'
 
 describe User do
-  it 'can create a new user' do
-    user = User.create
-    expect(user).not_to be nil
+
+  before do
+    subject = User.new
+    subject.name = "Amber"
+    subject.save
   end
 
-  # Write a new unit test here.
+  it 'can create a new user' do
+    expect(User.last).not_to be nil
+  end
+
+  it 'is expected to have a name' do
+    expect(User.last.name).to eq 'Amber'
+  end
 end

@@ -6,3 +6,6 @@ Feature: As a visitor
 Scenario:
   When I visit the index page
   Then I see "Fredrik is a student at Craft Academy"
+  When I visit the name page with the name "Amber" in the url
+  Then I should create a new user with name "Amber"
+  And I should see "This is Ambers page"

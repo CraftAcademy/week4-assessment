@@ -11,4 +11,9 @@ get '/' do
 erb :index
   end
 
+  get '/name/:name' do
+  User.create(name:params[:name])
+
+
+  end
 end

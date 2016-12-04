@@ -6,4 +6,5 @@ describe User do
     expect(user).not_to be nil
   end
 
+it {expected.to have_property :name}
 end

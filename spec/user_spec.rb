@@ -6,5 +6,7 @@ describe User do
     expect(user).not_to be nil
   end
 
-  # Write a new unit test here.
+  it 'should create a name for the user' do
+    expect(user.name).to eq 'Amber'
+  end
 end

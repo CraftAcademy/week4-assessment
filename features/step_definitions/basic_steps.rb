@@ -8,7 +8,7 @@ end
 
 When(/^I visit the name page for "([^"]*)"$/) do |name|
   visit "/name/#{name}"
-  # visit "/name/#{:name}"  # never, ever, EVER mix up the symbol with the args!
+  # visit "/name/#{:name}" 
   # expect(page).to have_current_path("name/#{name}")
 end
 

@@ -6,5 +6,7 @@ describe User do
     expect(user).not_to be nil
   end
 
+  it {is_expected.to have_property :name}
+
   # Write a new unit test here.
 end

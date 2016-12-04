@@ -13,9 +13,9 @@ When(/^that I am a student at Craft Academy$/) do
 end
 
 When(/^I visit the name page for "([^"]*)"$/) do |name|
-  visit "/name/{name}"
+  visit "/name/#{name}"
 end
 
-Then(/^I should create a new user with name "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I should create a new user with name "([^"]*)"$/) do |name|
+  expect(User.last.name).to eq name
 end

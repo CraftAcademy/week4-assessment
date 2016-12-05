@@ -6,5 +6,7 @@ describe User do
     expect(User.count).not_to eq 0
   end
 
+  it {is_expected.to have_property :name}
+
   # Write a new unit test here.
 end

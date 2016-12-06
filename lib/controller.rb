@@ -6,6 +6,13 @@ require 'pry'
 
 class WeekThreeAssessment < Sinatra::Base
 
-  # Your code will go here.
+  get '/name/:name' do
+    User.create(name: params[:name])
+  end
+
+  get '/' do
+    @name = "Rodrigo"
+    erb :index
+  end
 
 end

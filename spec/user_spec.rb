@@ -6,5 +6,10 @@ describe User do
     expect(User.count).not_to eq 0
   end
 
-  # Write a new unit test here.
+  it 'should create a name for the user' do
+    user = User.create
+    user.name = 'Amber'
+    user.save
+    expect(user.name).to eq 'Amber'
+  end
 end

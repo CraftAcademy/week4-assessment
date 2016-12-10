@@ -1,1 +1,6 @@
-# Put acceptance tests here - make sure to have a "Feature" and a "Scenario"
+Feature: As a user.
+  I should be able to see the page.
+
+  Scenario: User visits the site
+  When I visit the site
+  Then I should see "Philip is a student at craft academy"

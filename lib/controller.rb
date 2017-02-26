@@ -6,15 +6,12 @@ require 'pry'
 
 class WeekThreeAssessment < Sinatra::Base
 
-# get '/' do
-#   erb :index
-#   @name = "Johan"
-# end
-
-# get '/name/:Johan' do
-#   user = User.create(:name => 'Johan')
-#   user.save
-#     @namn1 = User.all
-#   erb :name
-# end
+get '/' do
+  @name = 'Johan'
+  erb :index
+end
+#
+get '/name/:Johan' do
+  erb :name
+  end
 end

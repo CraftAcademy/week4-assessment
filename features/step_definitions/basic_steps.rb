@@ -11,5 +11,5 @@ Then(/^I should create a new user with name "([^"]*)"$/) do |arg1|
 end
 
 Then(/^I should see "([^"]*)"$/) do |arg1|
-  expect(page).to have_content "Felix is a student at Craft Academy"
+  expect(page).to have_content "#{arg1}"
 end

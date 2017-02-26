@@ -7,6 +7,7 @@ require 'pry'
 class WeekThreeAssessment < Sinatra::Base
 
   get '/' do
+    @name = 'Felix'
     erb :index
   end
 

@@ -1,0 +1,6 @@
+<% user = User.create(:name => 'Casper')
+   user.save %>
+
+<% @namn1.each do | user | %>
+   <p><%= user.name %></p>
+<% end %>

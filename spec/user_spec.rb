@@ -7,6 +7,3 @@ describe User do
     expect(User.count).not_to eq 0
   end
 end
-
-it  { is_expected.to have_property :name}
-end

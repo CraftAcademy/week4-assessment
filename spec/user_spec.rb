@@ -6,5 +6,8 @@ describe User do
     expect(User.count).not_to eq 0
   end
 
-  # Write a new unit test here.
+  it 'has an Amber user' do
+    @user2 = User.create(name: 'Amber')
+    expect(@user2.name).to eq 'Amber'
+  end
 end

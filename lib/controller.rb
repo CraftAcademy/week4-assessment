@@ -11,7 +11,7 @@ class WeekThreeAssessment < Sinatra::Base
     erb :index
   end
 
-  get '/name/amber' do
+  get '/name/:name' do
     erb :amber
   end
 

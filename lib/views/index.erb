@@ -1,1 +1,5 @@
-<h1>Jennifer is a student at Craft Academy</h1>
+<h1>Craft Academy</h1>
+<% binding.pry %>
+<% @student.each do | student | %>
+<p><%= student.name %> is a student at Craft Academy</p>
+<% end %>

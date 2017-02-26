@@ -8,7 +8,10 @@ require 'pry'
 class WeekThreeAssessment < Sinatra::Base
 
   get '/' do
+      @student = Student.all
       erb :index
-    end
+  end
+
+
 
 end

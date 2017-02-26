@@ -12,6 +12,7 @@ class WeekThreeAssessment < Sinatra::Base
   end
 
   get '/name/:name' do
+    @user2 = User.create(name: params[:name])
     erb :amber
   end
 

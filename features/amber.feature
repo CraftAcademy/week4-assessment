@@ -1,4 +1,6 @@
-Feature: As i visit the Amber page
+Feature: As a visitor
+  So that I can do something
+  I want to create new user with my name by visiting my name page
 
   Background:
     Given The following users exists

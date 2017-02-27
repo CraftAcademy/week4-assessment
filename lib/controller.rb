@@ -10,8 +10,9 @@ get '/' do
   @name = 'Johan'
   erb :index
 end
-#
-get '/name/:Johan' do
+
+get '/name/:name' do
+  @name = params[:name]
   erb :name
   end
 end

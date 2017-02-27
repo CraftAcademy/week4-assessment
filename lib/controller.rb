@@ -10,8 +10,14 @@ class WeekThreeAssessment < Sinatra::Base
   get '/' do
       @student = Student.all
       erb :index
+
   end
 
-
+  get '/name/:name' do
+      user = User.create(:name => 'Jennifer')
+      user.save
+        @name = User.all
+      erb :name
+  end
 
 end

@@ -2,8 +2,8 @@ Given(/^I am on the home page$/) do
   visit '/'
 end
 
-When(/^I visit the name page for "([^"]*)"$/) do |arg1|
-  visit '/name/Amber'
+When(/^I visit the name page for "([^"]*)"$/) do |name|
+  visit "/name/#{name}"
 end
 
 Given(/^The following users exists$/) do |table|
@@ -12,10 +12,10 @@ Given(/^The following users exists$/) do |table|
   end
 end
 
-Then(/^I should create a new user with name "([^"]*)"$/) do |arg1|
-  expect(@user2.name).to eq "#{arg1}"
+Then(/^I should create a new user with name "([^"]*)"$/) do |username|
+  expect(@user2.name).to eq "#{username}"
 end
 
-Then(/^I should see "([^"]*)"$/) do |arg1|
-  expect(page).to have_content "#{arg1}"
+Then(/^I should see "([^"]*)"$/) do |content|
+  expect(page).to have_content "#{content}"
 end

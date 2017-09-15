@@ -7,4 +7,9 @@ describe User do
   end
 
   # Write a new unit test here.
+
+  it 'creates a user with name' do
+    user = User.create(user: 'Magnus')
+    expect(user.user).to eq 'Magnus'
+  end
 end

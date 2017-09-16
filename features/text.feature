@@ -1,2 +1,5 @@
 Feature: Week 3 assessment
-# Put acceptance tests here - make sure to have a "Feature" and a "Scenario"
+
+Scenario: When I visit '/'
+Given I visit the site
+Then see a message "Ólöf student at Craft Academy"

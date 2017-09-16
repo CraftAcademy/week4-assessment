@@ -3,3 +3,8 @@ require File.join(File.dirname(__FILE__), 'lib/controller.rb')
 use Rack::Static, urls: ['/css', '/js', '/img', '/fonts'], root: 'assets'
 
 run WeekThreeAssessment
+
+get '/' do
+  @name = 'Ólöf'
+  erb :index
+end

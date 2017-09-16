@@ -11,5 +11,6 @@ When(/^I visit the name page for "([^"]*)"$/) do |name|
 end
 
 Then(/^I should create a new user with name "([^"]*)"$/) do |user|
-  expect(page).to have_user
+  user = User.create(user: 'Amber')
+  expect(user.user).to eq name
 end

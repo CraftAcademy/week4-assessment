@@ -9,4 +9,15 @@ class WeekThreeAssessment < Sinatra::Base
   get '/' do
     erb :index
   end
+
+  def user
+    User.new
+  end
+
+  get '/name/:name' do
+    if user.valid?
+      user.save
+    end
+  end
+  DataMapper.finalize
 end

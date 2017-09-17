@@ -7,4 +7,9 @@ describe User do
   end
 
   # Write a new unit test here.
+  it 'can give new user name' do
+    user = User.new(name: "Amber")
+    expect(user[:name]).to eq "Amber"
+  end
+
 end

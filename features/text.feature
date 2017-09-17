@@ -1,2 +1,11 @@
 Feature: Week 3 assessment
-# Put acceptance tests here - make sure to have a "Feature" and a "Scenario"
+  As a user, I should be able to go to the site
+  Then I should be able to see my name
+
+  Scenario: user should be able to go to the site
+    Given I visit the site
+    Then viewing the text "Amanda is a student at Craft Academy"
+
+  Scenario: user visits name/Amber site
+    Given I visit 'name/Amber'
+    Then I should create a new user with name "Amber"

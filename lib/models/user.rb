@@ -4,5 +4,5 @@ class User
   include DataMapper::Resource
 
   property :id, Serial, key: true
-  property :user, String
+  property :name, String
 end

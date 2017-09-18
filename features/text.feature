@@ -3,7 +3,7 @@ Feature: Week 3 assessment
 
 Scenario: I visit the website
   Given I am on the main page
-  Then I should se message "Magnus is a student at Craft Academy"
+  Then I should have content "Magnus is a student at Craft Academy"
 
 Scenario: I visit the website as user Amber
   When I visit the name page for "Amber"

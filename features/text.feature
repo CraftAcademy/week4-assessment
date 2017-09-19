@@ -4,7 +4,7 @@ Feature: Week 3 assessment
 
   Scenario: user should be able to go to the site
     Given I visit the site
-    Then viewing the text "Amanda is a student at Craft Academy"
+    Then I will see the sentence "Amanda is a student at Craft Academy"
 
   Scenario: user visits name/Amber site
     Given I visit 'name/Amber'

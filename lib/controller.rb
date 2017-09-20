@@ -14,10 +14,14 @@ class WeekThreeAssessment < Sinatra::Base
     User.new
   end
 
+  get '/' do
+    @name = 'Ólöf'
+    erb :index
+  end
+
   get '/name/:name' do
     if user.valid?
       user.save
     end
   end
-  DataMapper.finalize
 end

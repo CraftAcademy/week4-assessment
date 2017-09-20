@@ -6,8 +6,4 @@ class User
   property :id, Serial, key: true
   property :name, String
 
-  def user
-    User.new
-  end
-  DataMapper.finalize
 end

@@ -5,4 +5,4 @@ Feature: Webpage for name
 
   Scenario: I visit Amber page
     Given I visit the amber page
-    Then I would like to create new user with name "Amber"
+    Then I should create new user with name "Amber"

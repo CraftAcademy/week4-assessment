@@ -10,7 +10,7 @@ Given(/^I visit the amber page$/) do
   visit '/name/Amber'
 end
 
-Then(/^I would like to create new user with name "([^"]*)"$/) do |name|
+Then(/^I should create new user with name "([^"]*)"$/) do |name|
   user = User.last
   expect(user.name).to eq name
 end

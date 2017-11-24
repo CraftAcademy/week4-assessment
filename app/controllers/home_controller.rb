@@ -1,3 +1,6 @@
 class WeekFourAssessmentApp
-  # Your code will go here.
+  get '/' do
+    @name = 'Alfred'
+    erb :welcome
+  end
 end

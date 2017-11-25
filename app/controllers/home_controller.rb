@@ -5,12 +5,7 @@ class WeekFourAssessmentApp
   end
 
   get '/name/:name' do
-  "<h1>Welcome #{params[:name]}</h1>"
+    user = User.create(name: params[:name])
   end
 
-  post '/users' do
-    user = User.new(:name)
-    user.save
-    redirect '/name/:name'
-  end
 end

@@ -6,7 +6,7 @@ Then(/^I should see "([^"]*)"$/) do |text|
   expect(page).to have_content text
 end
 
-When(/^I visit the name page for "([^"]*)"$/) do |arg1|
+Given(/^I visit the name page for "([^"]*)"$/) do
   visit 'name/amber'
 end
 

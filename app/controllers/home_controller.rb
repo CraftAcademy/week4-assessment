@@ -5,7 +5,8 @@ class WeekFourAssessmentApp
   end
 
   get '/name/:name' do
-    user = User.new(name: ['name'])
+    user_params = params['name']
+    user = User.new(user_params)
   end
 
 end

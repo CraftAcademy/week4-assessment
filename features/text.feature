@@ -8,5 +8,5 @@ Feature: Week 4 assessment
     Then I should see "Francesco is a student at Craft Academy"
 
   Scenario:
-    When I visit the name page for "Amber"
+    Given I visit the name page for "Amber"
     Then I should create a new user with name "Amber"

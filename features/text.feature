@@ -7,6 +7,6 @@ Scenario: Displays text
   Given I visit the index page
   Then show the text "Scott" is a student at Craft Academy
 
-Scenario: Creates user with specified name and displays most recent user
+Scenario: Creates user with specified name
   When I visit the name page for "Amber"
   Then I should create a new user with name "Amber"

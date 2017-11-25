@@ -5,4 +5,7 @@ describe User do
   end
 
   # Write a new unit test here.
+  describe 'database table' do
+    it { is_expected.to have_db_column :name }
+  end
 end

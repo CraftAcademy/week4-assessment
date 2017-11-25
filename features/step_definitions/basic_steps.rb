@@ -8,7 +8,7 @@ Then(/^show the text "([^"]*)" is a student at Craft Academy$/) do |name|
 end
 
 When(/^I visit the name page for "([^"]*)"$/) do |name|
-  visit '/name/name'
+  visit "/name/#{name}"
 end
 
 Then(/^I should create a new user with name "([^"]*)"$/) do |name|

@@ -6,9 +6,10 @@ Then(/^I would like to see the text "([^"]*)"$/) do |text|
   expect(page).to have_content text
 end
 
-Given(/^I visit the amber page$/) do
-  visit '/name/Amber'
+Given(/^I visit the "([^"]*)" page$/) do |name|
+  visit "/name/#{name}"
 end
+
 
 Then(/^I should create new user with name "([^"]*)"$/) do |name|
   user = User.last

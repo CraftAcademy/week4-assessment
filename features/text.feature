@@ -4,5 +4,5 @@ Feature: Webpage for name
     Then I would like to see the text "Alfred is a student of Craft Academy"
 
   Scenario: I visit Amber page
-    Given I visit the amber page
+    Given I visit the "Amber" page
     Then I should create new user with name "Amber"

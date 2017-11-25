@@ -1,2 +1,4 @@
 Feature: Week 4 assessment
-# Put acceptance tests here - make sure to have a "Feature" and a "Scenario"
+Scenario:
+  Given I visit the CA site
+  Then I would like to see "Lisa is a student at Craft Academy"

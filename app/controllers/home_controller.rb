@@ -1,3 +1,5 @@
 class WeekFourAssessmentApp
-  # Your code will go here.
+  get '/'
+    erb :welcome
+  end
 end

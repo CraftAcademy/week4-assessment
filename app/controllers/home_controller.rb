@@ -1,5 +1,5 @@
-# class WeekFourAssessmentApp
-#   get '/' do
-#   binding.pry
-#   end
-# end
+class WeekFourAssessmentApp
+  get '/' do
+  @name = 'Sophie'
+  end
+end

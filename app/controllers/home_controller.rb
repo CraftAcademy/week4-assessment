@@ -1,3 +1,5 @@
-class WeekFourAssessmentApp
-  # Your code will go here.
-end
+# class WeekFourAssessmentApp
+#   get '/' do
+#   binding.pry
+#   end
+# end

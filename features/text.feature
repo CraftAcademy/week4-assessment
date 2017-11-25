@@ -5,4 +5,4 @@ Scenario:
 
 
   And When I visit the name page for "Amber"
-    And I should create a new user with name "Amber"
+  And I should create a new user with name "Amber"

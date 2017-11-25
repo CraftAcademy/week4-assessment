@@ -4,8 +4,8 @@ class WeekFourAssessmentApp
     erb :welcome
   end
 
-  get '/name/Amber' do
-    @name = 'Amber'
-    erb :name/name
+  get '/name/:name' do
+    new_user = User.create(name: params[:name])
+    # erb :amber
   end
 end

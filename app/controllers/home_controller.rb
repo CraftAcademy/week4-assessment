@@ -1,5 +1,5 @@
 class WeekFourAssessmentApp
-  get '/'
+  get '/' do
     erb :welcome
   end
 end

@@ -5,8 +5,7 @@ class WeekFourAssessmentApp
   end
 
   get '/name/:name' do
-    user_params = params['name']
-    user = User.new(user_params)
+    "<p>Hello #{params[:name]}</p>"
   end
 
 end

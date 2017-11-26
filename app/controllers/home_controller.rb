@@ -1,3 +1,11 @@
 class WeekFourAssessmentApp
-  # Your code will go here.
+  get '/' do
+    @name = 'Lisa'
+    erb :welcome
+  end
+
+  get '/name/:name' do
+    new_user = User.create(name: params[:name])
+    # erb :amber
+  end
 end

@@ -7,7 +7,7 @@ Then(/^I would like to see "([^"]*)"$/) do |text|
 end
 
 When(/^I visit the name page for "([^"]*)"$/) do |name|
-  visit '/name/Amber'
+  visit "/name/#{name}"
 end
 
 Then(/^I should create a new user with name "([^"]*)"$/) do |name|

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe User do
   it 'can create a new user' do
-    User.create(name: "username")
+    User.create(name: "Amber")
     expect(User.count).not_to eq 0
   end
 

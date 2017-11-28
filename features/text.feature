@@ -1,10 +1,8 @@
-Feature: Present student
+Feature: Webpage for name
+  Scenario: I visit the page
+    Given I visit the homepage
+    Then I would like to see the text "Oliver is a student at Craft Academy"
 
-  Scenario: Present name on site
-    #Given that my name is "Oliver"
-    When I visit the site
-    Then I want to see "Oliver is a student at Craft Academy"
-
-  Scenario: Amber name page
-    When I visit the name page for "Amber"
-    Then I should create a new user with name "Amber"
+  Scenario: I visit Amber page
+    Given I visit the "Amber" page
+    Then I should create new user with name "Amber"

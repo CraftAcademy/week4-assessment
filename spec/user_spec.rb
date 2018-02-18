@@ -4,5 +4,8 @@ describe User do
     expect(User.count).not_to eq 0
   end
 
-  # Write a new unit test here.
+  it 'Creates a user with name amber' do
+    User.create
+    expect(User.name).to eq "Amber"
+  end
 end

@@ -9,3 +9,7 @@ Feature: Week 4 assessment
   Scenario: User visits the site and is able to see his/her name on the page
     When the user visits the site
     Then he should see "BollKalle is a student at Craft Academy"
+
+  Scenario: User named Amber visits the site a user with her name should be created
+    When I visit the name page for "Amber"
+    Then I should create a new user with name "Amber"

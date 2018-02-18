@@ -1,3 +1,10 @@
 class WeekFourAssessmentApp
-  # Your code will go here.
+  get '/' do
+    @message = "Holger"
+    erb :welcome
+  end
+
+  post '/name/:name' do
+    User.create(name: params[:name])
+  end
 end

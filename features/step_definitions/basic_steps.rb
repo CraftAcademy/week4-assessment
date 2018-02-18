@@ -7,6 +7,6 @@ When(/^the user visits the site$/) do
   visit '/'
 end
 
-Then(/^he should see "([^"]*)" is a student at Craft Academy"$/) do |username|
+Then(/^he should see "([^"]*)"$/) do |username|
   expect(page).to have_content username
 end

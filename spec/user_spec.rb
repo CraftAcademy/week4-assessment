@@ -1,8 +1,11 @@
 describe User do
-  it 'can create a new user' do
+  it 'Can create a new user' do
     User.create
     expect(User.count).not_to eq 0
   end
 
-  # Write a new unit test here.
+  it 'Can create a user with name Amber' do
+    user = User.create(name: 'Amber')
+    expect(user.name).to eq 'Amber'
+  end
 end
